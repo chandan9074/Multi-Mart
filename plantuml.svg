@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1416px" preserveAspectRatio="none" style="width:1342px;height:1416px;background:#FFFFFF;" version="1.1" viewBox="0 0 1342 1416" width="1342px" zoomAndPan="magnify"><defs/><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="2" fill="#F1F1F1" height="178.375" id="User" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="276" x="712.02" y="7"/><ellipse cx="829.77" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M832.7388,28.6406 Q832.1606,28.9375 831.52,29.0781 Q830.8794,29.2344 830.1763,29.2344 Q827.6763,29.2344 826.3481,27.5938 Q825.0356,25.9375 825.0356,22.8125 Q825.0356,19.6875 826.3481,18.0313 Q827.6763,16.375 830.1763,16.375 Q830.8794,16.375 831.52,16.5313 Q832.1763,16.6875 832.7388,16.9844 L832.7388,19.7031 Q832.1138,19.125 831.52,18.8594 Q830.9263,18.5781 830.3013,18.5781 Q828.9575,18.5781 828.27,19.6563 Q827.5825,20.7188 827.5825,22.8125 Q827.5825,24.9063 828.27,25.9844 Q828.9575,27.0469 830.3013,27.0469 Q830.9263,27.0469 831.52,26.7813 Q832.1138,26.5 832.7388,25.9219 L832.7388,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="850.27" y="27.8467">User</text><line style="stroke:#181818;stroke-width:0.5;" x1="713.02" x2="987.02" y1="39" y2="39"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="720.02" y="49.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="732.02" y="55.9951">user_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="720.02" y="65.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="732.02" y="72.292">username: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="720.02" y="82.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="732.02" y="88.5889">email: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="720.02" y="98.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="732.02" y="104.8857">password: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="720.02" y="114.8359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="732.02" y="121.1826">created_at: DateTime</text><line style="stroke:#181818;stroke-width:0.5;" x1="713.02" x2="987.02" y1="128.4844" y2="128.4844"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="720.02" y="139.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="250" x="732.02" y="145.4795">role: Enum(Customer, Seller, Admin)</text><ellipse cx="723.02" cy="158.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="732.02" y="161.7764">authenticate()</text><ellipse cx="723.02" cy="174.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="732.02" y="178.0732">update_profile()</text></g><!--MD5=[2ce0c9fb7f55b1e256ab28a8ea6b25ec]
+class Customer--><g id="elem_Customer"><rect codeLine="13" fill="#F1F1F1" height="113.1875" id="Customer" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="197" x="279.52" y="253"/><ellipse cx="339.77" cy="269" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M342.7388,274.6406 Q342.1606,274.9375 341.52,275.0781 Q340.8794,275.2344 340.1763,275.2344 Q337.6763,275.2344 336.3481,273.5938 Q335.0356,271.9375 335.0356,268.8125 Q335.0356,265.6875 336.3481,264.0313 Q337.6763,262.375 340.1763,262.375 Q340.8794,262.375 341.52,262.5313 Q342.1763,262.6875 342.7388,262.9844 L342.7388,265.7031 Q342.1138,265.125 341.52,264.8594 Q340.9263,264.5781 340.3013,264.5781 Q338.9575,264.5781 338.27,265.6563 Q337.5825,266.7188 337.5825,268.8125 Q337.5825,270.9063 338.27,271.9844 Q338.9575,273.0469 340.3013,273.0469 Q340.9263,273.0469 341.52,272.7813 Q342.1138,272.5 342.7388,271.9219 L342.7388,274.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="360.27" y="273.8467">Customer</text><line style="stroke:#181818;stroke-width:0.5;" x1="280.52" x2="475.52" y1="285" y2="285"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="287.52" y="295.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="299.52" y="301.9951">shipping_address: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="287.52" y="311.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="299.52" y="318.292">phone_number: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="280.52" x2="475.52" y1="325.5938" y2="325.5938"/><ellipse cx="290.52" cy="339.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="299.52" y="342.5889">view_order_history()</text><ellipse cx="290.52" cy="355.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="299.52" y="358.8857">add_to_cart()</text></g><!--MD5=[43844b47726d9c4702f600b824e35ead]
+class Seller--><g id="elem_Seller"><rect codeLine="20" fill="#F1F1F1" height="129.4844" id="Seller" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="195" x="752.52" y="245"/><ellipse cx="826.77" cy="261" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M829.7388,266.6406 Q829.1606,266.9375 828.52,267.0781 Q827.8794,267.2344 827.1763,267.2344 Q824.6763,267.2344 823.3481,265.5938 Q822.0356,263.9375 822.0356,260.8125 Q822.0356,257.6875 823.3481,256.0313 Q824.6763,254.375 827.1763,254.375 Q827.8794,254.375 828.52,254.5313 Q829.1763,254.6875 829.7388,254.9844 L829.7388,257.7031 Q829.1138,257.125 828.52,256.8594 Q827.9263,256.5781 827.3013,256.5781 Q825.9575,256.5781 825.27,257.6563 Q824.5825,258.7188 824.5825,260.8125 Q824.5825,262.9063 825.27,263.9844 Q825.9575,265.0469 827.3013,265.0469 Q827.9263,265.0469 828.52,264.7813 Q829.1138,264.5 829.7388,263.9219 L829.7388,266.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="847.27" y="265.8467">Seller</text><line style="stroke:#181818;stroke-width:0.5;" x1="753.52" x2="946.52" y1="277" y2="277"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="760.52" y="287.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="772.52" y="293.9951">store_name: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="760.52" y="303.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="772.52" y="310.292">store_description: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="760.52" y="320.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="772.52" y="326.5889">earnings: Decimal</text><line style="stroke:#181818;stroke-width:0.5;" x1="753.52" x2="946.52" y1="333.8906" y2="333.8906"/><ellipse cx="763.52" cy="347.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="772.52" y="350.8857">manage_products()</text><ellipse cx="763.52" cy="363.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="772.52" y="367.1826">view_sales_analytics()</text></g><!--MD5=[db6d18d8099558415abc41d00477ab92]
+class Admin--><g id="elem_Admin"><rect codeLine="28" fill="#F1F1F1" height="96.8906" id="Admin" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="328" x="1007.02" y="261"/><ellipse cx="1145.27" cy="277" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1148.2388,282.6406 Q1147.6606,282.9375 1147.02,283.0781 Q1146.3794,283.2344 1145.6763,283.2344 Q1143.1763,283.2344 1141.8481,281.5938 Q1140.5356,279.9375 1140.5356,276.8125 Q1140.5356,273.6875 1141.8481,272.0313 Q1143.1763,270.375 1145.6763,270.375 Q1146.3794,270.375 1147.02,270.5313 Q1147.6763,270.6875 1148.2388,270.9844 L1148.2388,273.7031 Q1147.6138,273.125 1147.02,272.8594 Q1146.4263,272.5781 1145.8013,272.5781 Q1144.4575,272.5781 1143.77,273.6563 Q1143.0825,274.7188 1143.0825,276.8125 Q1143.0825,278.9063 1143.77,279.9844 Q1144.4575,281.0469 1145.8013,281.0469 Q1146.4263,281.0469 1147.02,280.7813 Q1147.6138,280.5 1148.2388,279.9219 L1148.2388,282.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="1165.77" y="281.8467">Admin</text><line style="stroke:#181818;stroke-width:0.5;" x1="1008.02" x2="1334.02" y1="293" y2="293"/><line style="stroke:#181818;stroke-width:0.5;" x1="1008.02" x2="1334.02" y1="301" y2="301"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1015.02" y="311.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="302" x="1027.02" y="317.9951">admin_level: Enum(Moderator, SuperAdmin)</text><ellipse cx="1018.02" cy="330.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="1027.02" y="334.292">moderate_users()</text><ellipse cx="1018.02" cy="347.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="1027.02" y="350.5889">generate_reports()</text></g><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><g id="elem_Product"><rect codeLine="34" fill="#F1F1F1" height="227.2656" id="Product" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="555.52" y="960"/><ellipse cx="611.77" cy="976" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M614.7388,981.6406 Q614.1606,981.9375 613.52,982.0781 Q612.8794,982.2344 612.1763,982.2344 Q609.6763,982.2344 608.3481,980.5938 Q607.0356,978.9375 607.0356,975.8125 Q607.0356,972.6875 608.3481,971.0313 Q609.6763,969.375 612.1763,969.375 Q612.8794,969.375 613.52,969.5313 Q614.1763,969.6875 614.7388,969.9844 L614.7388,972.7031 Q614.1138,972.125 613.52,971.8594 Q612.9263,971.5781 612.3013,971.5781 Q610.9575,971.5781 610.27,972.6563 Q609.5825,973.7188 609.5825,975.8125 Q609.5825,977.9063 610.27,978.9844 Q610.9575,980.0469 612.3013,980.0469 Q612.9263,980.0469 613.52,979.7813 Q614.1138,979.5 614.7388,978.9219 L614.7388,981.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="632.27" y="980.8467">Product</text><line style="stroke:#181818;stroke-width:0.5;" x1="556.52" x2="729.52" y1="992" y2="992"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1002.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="575.52" y="1008.9951">product_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1018.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="575.52" y="1025.292">name: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1035.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="575.52" y="1041.5889">description: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1051.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="575.52" y="1057.8857">price: Decimal</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1067.8359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="575.52" y="1074.1826">stock: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1084.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="575.52" y="1090.4795">category_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1100.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="575.52" y="1106.7764">brand_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1116.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="575.52" y="1123.0732">seller_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="563.52" y="1133.0234"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="575.52" y="1139.3701">created_at: DateTime</text><line style="stroke:#181818;stroke-width:0.5;" x1="556.52" x2="729.52" y1="1146.6719" y2="1146.6719"/><ellipse cx="566.52" cy="1160.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="575.52" y="1163.667">update_stock()</text><ellipse cx="566.52" cy="1176.6172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="575.52" y="1179.9639">delete_product()</text></g><!--MD5=[a96594a83e2ecdc78cbf17c2ddf01934]
+class Category--><g id="elem_Category"><rect codeLine="48" fill="#F1F1F1" height="113.1875" id="Category" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="163" x="686.52" y="1271.5"/><ellipse cx="732.77" cy="1287.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M735.7388,1293.1406 Q735.1606,1293.4375 734.52,1293.5781 Q733.8794,1293.7344 733.1763,1293.7344 Q730.6763,1293.7344 729.3481,1292.0938 Q728.0356,1290.4375 728.0356,1287.3125 Q728.0356,1284.1875 729.3481,1282.5313 Q730.6763,1280.875 733.1763,1280.875 Q733.8794,1280.875 734.52,1281.0313 Q735.1763,1281.1875 735.7388,1281.4844 L735.7388,1284.2031 Q735.1138,1283.625 734.52,1283.3594 Q733.9263,1283.0781 733.3013,1283.0781 Q731.9575,1283.0781 731.27,1284.1563 Q730.5825,1285.2188 730.5825,1287.3125 Q730.5825,1289.4063 731.27,1290.4844 Q731.9575,1291.5469 733.3013,1291.5469 Q733.9263,1291.5469 734.52,1291.2813 Q735.1138,1291 735.7388,1290.4219 L735.7388,1293.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="753.27" y="1292.3467">Category</text><line style="stroke:#181818;stroke-width:0.5;" x1="687.52" x2="848.52" y1="1303.5" y2="1303.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="694.52" y="1314.1484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="706.52" y="1320.4951">category_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="694.52" y="1330.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="706.52" y="1336.792">name: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="694.52" y="1346.7422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="706.52" y="1353.0889">description: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="687.52" x2="848.52" y1="1360.3906" y2="1360.3906"/><ellipse cx="697.52" cy="1374.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="706.52" y="1377.3857">add_category()</text></g><!--MD5=[8a78b94ac034f628eee9959bc26304be]
+class Brand--><g id="elem_Brand"><rect codeLine="55" fill="#F1F1F1" height="113.1875" id="Brand" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="143" x="508.52" y="1271.5"/><ellipse cx="555.27" cy="1287.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M558.2388,1293.1406 Q557.6606,1293.4375 557.02,1293.5781 Q556.3794,1293.7344 555.6763,1293.7344 Q553.1763,1293.7344 551.8481,1292.0938 Q550.5356,1290.4375 550.5356,1287.3125 Q550.5356,1284.1875 551.8481,1282.5313 Q553.1763,1280.875 555.6763,1280.875 Q556.3794,1280.875 557.02,1281.0313 Q557.6763,1281.1875 558.2388,1281.4844 L558.2388,1284.2031 Q557.6138,1283.625 557.02,1283.3594 Q556.4263,1283.0781 555.8013,1283.0781 Q554.4575,1283.0781 553.77,1284.1563 Q553.0825,1285.2188 553.0825,1287.3125 Q553.0825,1289.4063 553.77,1290.4844 Q554.4575,1291.5469 555.8013,1291.5469 Q556.4263,1291.5469 557.02,1291.2813 Q557.6138,1291 558.2388,1290.4219 L558.2388,1293.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="575.77" y="1292.3467">Brand</text><line style="stroke:#181818;stroke-width:0.5;" x1="509.52" x2="650.52" y1="1303.5" y2="1303.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="516.52" y="1314.1484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="528.52" y="1320.4951">brand_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="516.52" y="1330.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="528.52" y="1336.792">name: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="516.52" y="1346.7422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="528.52" y="1353.0889">logo_url: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="509.52" x2="650.52" y1="1360.3906" y2="1360.3906"/><ellipse cx="519.52" cy="1374.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="528.52" y="1377.3857">update_brand()</text></g><!--MD5=[a608780e30028417ceff2d6f0d878efa]
+class Cart--><g id="elem_Cart"><rect codeLine="62" fill="#F1F1F1" height="145.7813" id="Cart" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="97.52" y="466.5"/><ellipse cx="166.77" cy="482.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M169.7388,488.1406 Q169.1606,488.4375 168.52,488.5781 Q167.8794,488.7344 167.1763,488.7344 Q164.6763,488.7344 163.3481,487.0938 Q162.0356,485.4375 162.0356,482.3125 Q162.0356,479.1875 163.3481,477.5313 Q164.6763,475.875 167.1763,475.875 Q167.8794,475.875 168.52,476.0313 Q169.1763,476.1875 169.7388,476.4844 L169.7388,479.2031 Q169.1138,478.625 168.52,478.3594 Q167.9263,478.0781 167.3013,478.0781 Q165.9575,478.0781 165.27,479.1563 Q164.5825,480.2188 164.5825,482.3125 Q164.5825,484.4063 165.27,485.4844 Q165.9575,486.5469 167.3013,486.5469 Q167.9263,486.5469 168.52,486.2813 Q169.1138,486 169.7388,485.4219 L169.7388,488.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="187.27" y="487.3467">Cart</text><line style="stroke:#181818;stroke-width:0.5;" x1="98.52" x2="271.52" y1="498.5" y2="498.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="105.52" y="509.1484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="117.52" y="515.4951">cart_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="105.52" y="525.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="117.52" y="531.792">customer_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="105.52" y="541.7422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="117.52" y="548.0889">created_at: DateTime</text><line style="stroke:#181818;stroke-width:0.5;" x1="98.52" x2="271.52" y1="555.3906" y2="555.3906"/><ellipse cx="108.52" cy="569.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="117.52" y="572.3857">add_product()</text><ellipse cx="108.52" cy="585.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="117.52" y="588.6826">remove_product()</text><ellipse cx="108.52" cy="601.6328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="117.52" y="604.9795">calculate_total()</text></g><!--MD5=[9bab5063b42bf90dcca070a1981b0c6a]
+class CartItem--><g id="elem_CartItem"><rect codeLine="71" fill="#F1F1F1" height="129.4844" id="CartItem" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="166" x="62.02" y="738"/><ellipse cx="111.77" cy="754" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M114.7388,759.6406 Q114.1606,759.9375 113.52,760.0781 Q112.8794,760.2344 112.1763,760.2344 Q109.6763,760.2344 108.3481,758.5938 Q107.0356,756.9375 107.0356,753.8125 Q107.0356,750.6875 108.3481,749.0313 Q109.6763,747.375 112.1763,747.375 Q112.8794,747.375 113.52,747.5313 Q114.1763,747.6875 114.7388,747.9844 L114.7388,750.7031 Q114.1138,750.125 113.52,749.8594 Q112.9263,749.5781 112.3013,749.5781 Q110.9575,749.5781 110.27,750.6563 Q109.5825,751.7188 109.5825,753.8125 Q109.5825,755.9063 110.27,756.9844 Q110.9575,758.0469 112.3013,758.0469 Q112.9263,758.0469 113.52,757.7813 Q114.1138,757.5 114.7388,756.9219 L114.7388,759.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="132.27" y="758.8467">CartItem</text><line style="stroke:#181818;stroke-width:0.5;" x1="63.02" x2="227.02" y1="770" y2="770"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="70.02" y="780.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="82.02" y="786.9951">cart_item_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="70.02" y="796.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="82.02" y="803.292">cart_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="70.02" y="813.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="82.02" y="819.5889">product_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="70.02" y="829.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="82.02" y="835.8857">quantity: Integer</text><line style="stroke:#181818;stroke-width:0.5;" x1="63.02" x2="227.02" y1="843.1875" y2="843.1875"/><ellipse cx="73.02" cy="856.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="82.02" y="860.1826">update_quantity()</text></g><!--MD5=[cf4d6237fcae255cd2e1656cf84a30e2]
+class Order--><g id="elem_Order"><rect codeLine="79" fill="#F1F1F1" height="210.9688" id="Order" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="384" x="378.02" y="434"/><ellipse cx="546.27" cy="450" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M549.2388,455.6406 Q548.6606,455.9375 548.02,456.0781 Q547.3794,456.2344 546.6763,456.2344 Q544.1763,456.2344 542.8481,454.5938 Q541.5356,452.9375 541.5356,449.8125 Q541.5356,446.6875 542.8481,445.0313 Q544.1763,443.375 546.6763,443.375 Q547.3794,443.375 548.02,443.5313 Q548.6763,443.6875 549.2388,443.9844 L549.2388,446.7031 Q548.6138,446.125 548.02,445.8594 Q547.4263,445.5781 546.8013,445.5781 Q545.4575,445.5781 544.77,446.6563 Q544.0825,447.7188 544.0825,449.8125 Q544.0825,451.9063 544.77,452.9844 Q545.4575,454.0469 546.8013,454.0469 Q547.4263,454.0469 548.02,453.7813 Q548.6138,453.5 549.2388,452.9219 L549.2388,455.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="566.77" y="454.8467">Order</text><line style="stroke:#181818;stroke-width:0.5;" x1="379.02" x2="761.02" y1="466" y2="466"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="386.02" y="476.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="398.02" y="482.9951">order_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="386.02" y="492.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="398.02" y="499.292">customer_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="386.02" y="509.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="398.02" y="515.5889">seller_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="386.02" y="525.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="398.02" y="531.8857">total_amount: Decimal</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="386.02" y="541.8359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="398.02" y="548.1826">created_at: DateTime</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="386.02" y="558.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="398.02" y="564.4795">updated_at: DateTime</text><line style="stroke:#181818;stroke-width:0.5;" x1="379.02" x2="761.02" y1="571.7813" y2="571.7813"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="386.02" y="582.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="317" x="398.02" y="588.7764">status: Enum(Processing, Shipped, Delivered)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="386.02" y="598.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="358" x="398.02" y="605.0732">payment_status: Enum(Pending, Completed, Failed)</text><ellipse cx="389.02" cy="618.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="398.02" y="621.3701">track_order()</text><ellipse cx="389.02" cy="634.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="398.02" y="637.667">update_status()</text></g><!--MD5=[003718b22fee2486eeba0fa029a176b7]
+class OrderItem--><g id="elem_OrderItem"><rect codeLine="92" fill="#F1F1F1" height="145.7813" id="OrderItem" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="615.52" y="729.5"/><ellipse cx="667.27" cy="745.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M670.2388,751.1406 Q669.6606,751.4375 669.02,751.5781 Q668.3794,751.7344 667.6763,751.7344 Q665.1763,751.7344 663.8481,750.0938 Q662.5356,748.4375 662.5356,745.3125 Q662.5356,742.1875 663.8481,740.5313 Q665.1763,738.875 667.6763,738.875 Q668.3794,738.875 669.02,739.0313 Q669.6763,739.1875 670.2388,739.4844 L670.2388,742.2031 Q669.6138,741.625 669.02,741.3594 Q668.4263,741.0781 667.8013,741.0781 Q666.4575,741.0781 665.77,742.1563 Q665.0825,743.2188 665.0825,745.3125 Q665.0825,747.4063 665.77,748.4844 Q666.4575,749.5469 667.8013,749.5469 Q668.4263,749.5469 669.02,749.2813 Q669.6138,749 670.2388,748.4219 L670.2388,751.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="687.77" y="750.3467">OrderItem</text><line style="stroke:#181818;stroke-width:0.5;" x1="616.52" x2="795.52" y1="761.5" y2="761.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="623.52" y="772.1484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="635.52" y="778.4951">order_item_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="623.52" y="788.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="635.52" y="794.792">order_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="623.52" y="804.7422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="635.52" y="811.0889">product_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="623.52" y="821.0391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="635.52" y="827.3857">quantity: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="623.52" y="837.3359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="635.52" y="843.6826">price_at_time: Decimal</text><line style="stroke:#181818;stroke-width:0.5;" x1="616.52" x2="795.52" y1="850.9844" y2="850.9844"/><ellipse cx="626.52" cy="864.6328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="635.52" y="867.9795">get_subtotal()</text></g><!--MD5=[764fca796ce7f635542948d8fc39db5e]
+class Payment--><g id="elem_Payment"><rect codeLine="101" fill="#F1F1F1" height="194.6719" id="Payment" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="317" x="263.52" y="705"/><ellipse cx="387.77" cy="721" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M390.7388,726.6406 Q390.1606,726.9375 389.52,727.0781 Q388.8794,727.2344 388.1763,727.2344 Q385.6763,727.2344 384.3481,725.5938 Q383.0356,723.9375 383.0356,720.8125 Q383.0356,717.6875 384.3481,716.0313 Q385.6763,714.375 388.1763,714.375 Q388.8794,714.375 389.52,714.5313 Q390.1763,714.6875 390.7388,714.9844 L390.7388,717.7031 Q390.1138,717.125 389.52,716.8594 Q388.9263,716.5781 388.3013,716.5781 Q386.9575,716.5781 386.27,717.6563 Q385.5825,718.7188 385.5825,720.8125 Q385.5825,722.9063 386.27,723.9844 Q386.9575,725.0469 388.3013,725.0469 Q388.9263,725.0469 389.52,724.7813 Q390.1138,724.5 390.7388,723.9219 L390.7388,726.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="408.27" y="725.8467">Payment</text><line style="stroke:#181818;stroke-width:0.5;" x1="264.52" x2="579.52" y1="737" y2="737"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="271.52" y="747.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="283.52" y="753.9951">payment_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="271.52" y="763.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="283.52" y="770.292">order_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="271.52" y="780.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="283.52" y="786.5889">amount: Decimal</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="271.52" y="796.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="283.52" y="802.8857">transaction_id: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="271.52" y="812.8359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="283.52" y="819.1826">created_at: DateTime</text><line style="stroke:#181818;stroke-width:0.5;" x1="264.52" x2="579.52" y1="826.4844" y2="826.4844"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="271.52" y="837.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="283.52" y="843.4795">method: Enum(Stripe, PayPal)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="271.52" y="853.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="291" x="283.52" y="859.7764">status: Enum(Pending, Completed, Failed)</text><ellipse cx="274.52" cy="872.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="283.52" y="876.0732">process_payment()</text><ellipse cx="274.52" cy="889.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="283.52" y="892.3701">refund()</text></g><!--MD5=[eb0e8f8ddfdc21c3fdb48447501fec67]
+class Review--><g id="elem_Review"><rect codeLine="113" fill="#F1F1F1" height="162.0781" id="Review" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="172.52" y="1247"/><ellipse cx="231.27" cy="1263" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M234.2388,1268.6406 Q233.6606,1268.9375 233.02,1269.0781 Q232.3794,1269.2344 231.6763,1269.2344 Q229.1763,1269.2344 227.8481,1267.5938 Q226.5356,1265.9375 226.5356,1262.8125 Q226.5356,1259.6875 227.8481,1258.0313 Q229.1763,1256.375 231.6763,1256.375 Q232.3794,1256.375 233.02,1256.5313 Q233.6763,1256.6875 234.2388,1256.9844 L234.2388,1259.7031 Q233.6138,1259.125 233.02,1258.8594 Q232.4263,1258.5781 231.8013,1258.5781 Q230.4575,1258.5781 229.77,1259.6563 Q229.0825,1260.7188 229.0825,1262.8125 Q229.0825,1264.9063 229.77,1265.9844 Q230.4575,1267.0469 231.8013,1267.0469 Q232.4263,1267.0469 233.02,1266.7813 Q233.6138,1266.5 234.2388,1265.9219 L234.2388,1268.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="251.77" y="1267.8467">Review</text><line style="stroke:#181818;stroke-width:0.5;" x1="173.52" x2="346.52" y1="1279" y2="1279"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="180.52" y="1289.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="192.52" y="1295.9951">review_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="180.52" y="1305.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="192.52" y="1312.292">product_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="180.52" y="1322.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="192.52" y="1328.5889">customer_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="180.52" y="1338.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="192.52" y="1344.8857">rating: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="180.52" y="1354.8359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="192.52" y="1361.1826">comment: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="180.52" y="1371.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="192.52" y="1377.4795">created_at: DateTime</text><line style="stroke:#181818;stroke-width:0.5;" x1="173.52" x2="346.52" y1="1384.7813" y2="1384.7813"/><ellipse cx="183.52" cy="1398.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="192.52" y="1401.7764">edit_review()</text></g><!--MD5=[0164b1296c96322ae523fec2000cafb7]
+class VendorDashboard--><g id="elem_VendorDashboard"><rect codeLine="123" fill="#F1F1F1" height="145.7813" id="VendorDashboard" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="176" x="903.02" y="466.5"/><ellipse cx="926.12" cy="482.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M929.0888,488.1406 Q928.5106,488.4375 927.87,488.5781 Q927.2294,488.7344 926.5263,488.7344 Q924.0263,488.7344 922.6981,487.0938 Q921.3856,485.4375 921.3856,482.3125 Q921.3856,479.1875 922.6981,477.5313 Q924.0263,475.875 926.5263,475.875 Q927.2294,475.875 927.87,476.0313 Q928.5263,476.1875 929.0888,476.4844 L929.0888,479.2031 Q928.4638,478.625 927.87,478.3594 Q927.2763,478.0781 926.6513,478.0781 Q925.3075,478.0781 924.62,479.1563 Q923.9325,480.2188 923.9325,482.3125 Q923.9325,484.4063 924.62,485.4844 Q925.3075,486.5469 926.6513,486.5469 Q927.2763,486.5469 927.87,486.2813 Q928.4638,486 929.0888,485.4219 L929.0888,488.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="941.92" y="487.3467">VendorDashboard</text><line style="stroke:#181818;stroke-width:0.5;" x1="904.02" x2="1078.02" y1="498.5" y2="498.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="911.02" y="509.1484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="923.02" y="515.4951">seller_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="911.02" y="525.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="923.02" y="531.792">total_sales: Decimal</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="911.02" y="541.7422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="923.02" y="548.0889">orders_count: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="911.02" y="558.0391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="923.02" y="564.3857">earnings: Decimal</text><line style="stroke:#181818;stroke-width:0.5;" x1="904.02" x2="1078.02" y1="571.6875" y2="571.6875"/><ellipse cx="914.02" cy="585.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="923.02" y="588.6826">generate_analytics()</text><ellipse cx="914.02" cy="601.6328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="923.02" y="604.9795">export_report()</text></g><!--MD5=[a50c4b3bf8ea0f6f51866fe0a911faf7]
+class AdminPanel--><g id="elem_AdminPanel"><rect codeLine="132" fill="#F1F1F1" height="113.1875" id="AdminPanel" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="164" x="1114.02" y="483"/><ellipse cx="1151.97" cy="499" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1154.9388,504.6406 Q1154.3606,504.9375 1153.72,505.0781 Q1153.0794,505.2344 1152.3763,505.2344 Q1149.8763,505.2344 1148.5481,503.5938 Q1147.2356,501.9375 1147.2356,498.8125 Q1147.2356,495.6875 1148.5481,494.0313 Q1149.8763,492.375 1152.3763,492.375 Q1153.0794,492.375 1153.72,492.5313 Q1154.3763,492.6875 1154.9388,492.9844 L1154.9388,495.7031 Q1154.3138,495.125 1153.72,494.8594 Q1153.1263,494.5781 1152.5013,494.5781 Q1151.1575,494.5781 1150.47,495.6563 Q1149.7825,496.7188 1149.7825,498.8125 Q1149.7825,500.9063 1150.47,501.9844 Q1151.1575,503.0469 1152.5013,503.0469 Q1153.1263,503.0469 1153.72,502.7813 Q1154.3138,502.5 1154.9388,501.9219 L1154.9388,504.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="1171.07" y="503.8467">AdminPanel</text><line style="stroke:#181818;stroke-width:0.5;" x1="1115.02" x2="1277.02" y1="515" y2="515"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1122.02" y="525.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="1134.02" y="531.9951">admin_id: Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1122.02" y="541.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="1134.02" y="548.292">report_data: JSON</text><line style="stroke:#181818;stroke-width:0.5;" x1="1115.02" x2="1277.02" y1="555.5938" y2="555.5938"/><ellipse cx="1125.02" cy="569.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="1134.02" y="572.5889">moderate_content()</text><ellipse cx="1125.02" cy="585.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="1134.02" y="588.8857">view_analytics()</text></g><!--MD5=[01a41ffe728356ae3116655ed66131ce]
+reverse link User to Customer--><g id="link_User_Customer"><path codeLine="140" d="M693.51,167.13 C622.04,199.16 539.54,236.12 476.84,264.22 " fill="none" id="User-backto-Customer" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="690.79,160.68,711.91,158.89,696.52,173.45,690.79,160.68" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[85ae973cc973e0e3cbfd4e54ab8b34e0]
+reverse link User to Seller--><g id="link_User_Seller"><path codeLine="141" d="M850.02,205.56 C850.02,219.05 850.02,232.47 850.02,244.96 " fill="none" id="User-backto-Seller" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="843.02,205.16,850.02,185.16,857.02,205.16,843.02,205.16" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[933987b91d2b08b1b4941f3221fa6cec]
+reverse link User to Admin--><g id="link_User_Admin"><path codeLine="142" d="M1000.55,196.18 C1034.77,218.73 1069.6,241.68 1098.78,260.9 " fill="none" id="User-backto-Admin" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="996.68,202.01,983.83,185.16,1004.38,190.32,996.68,202.01" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[863dfbbd3a5ad0c759ac56a9f1e943ac]
+link Seller to Product--><g id="link_Seller_Product"><path codeLine="144" d="M860.18,374.16 C875.09,486.11 893.22,723.13 814.02,900 C795.58,941.18 762.68,978.07 730.63,1007.07 " fill="none" id="Seller-Product" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="852.8923" y="394.5501">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="738.5278" y="998.2403">0..*</text></g><!--MD5=[41043388d0f8d1cf0966079386e80353]
+link Product to Category--><g id="link_Product_Category"><path codeLine="145" d="M698.75,1187.09 C713.21,1216.28 728.15,1246.47 740.44,1271.29 " fill="none" id="Product-Category" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="678.7217" y="1207.2882">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="728.5912" y="1260.528">1</text></g><!--MD5=[5aa13b7ab9f0c275d874c3b024766aa8]
+link Product to Brand--><g id="link_Product_Brand"><path codeLine="146" d="M614.93,1187.09 C607.64,1216.28 600.11,1246.47 593.92,1271.29 " fill="none" id="Product-Brand" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="589.27" y="1207.2882">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="587.1266" y="1260.528">1</text></g><!--MD5=[0f5b94126f31101e1168595a8c405a4a]
+link Customer to Cart--><g id="link_Customer_Cart"><path codeLine="148" d="M330.8,366.28 C305.25,396.47 273.39,434.1 245.98,466.49 " fill="none" id="Customer-Cart" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="316.5576" y="386.1777">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="243.854" y="455.2724">1</text></g><!--MD5=[b2d2a66d0e582d737a40269c2ea7db91]
+link Cart to CartItem--><g id="link_Cart_CartItem"><path codeLine="149" d="M173.98,612.51 C167.97,651.74 160.59,699.86 154.79,737.73 " fill="none" id="Cart-CartItem" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="164.5465" y="632.2673">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="131.6008" y="726.8731">0..*</text></g><!--MD5=[b05a6c0e609b4fce27e5fb84e8f8e115]
+link CartItem to Product--><g id="link_CartItem_Product"><path codeLine="150" d="M204.82,867.18 C217.72,878.97 231.77,890.54 246.02,900 C344.46,965.38 471.75,1015.52 555.32,1044.48 " fill="none" id="CartItem-Product" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="187.4047" y="887.5724">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="539.4395" y="1038.4028">1</text></g><!--MD5=[135794f54b59c9e5883929d048383f81]
+link Customer to Order--><g id="link_Customer_Order"><path codeLine="152" d="M424.99,366.28 C442.19,386.71 462.27,410.56 481.91,433.87 " fill="none" id="Customer-Order" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="422.227" y="386.1777">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="451.9062" y="422.9882">0..*</text></g><!--MD5=[5ba901dceace24f0bd27372b1f8edb11]
+link Seller to Order--><g id="link_Seller_Order"><path codeLine="153" d="M772.02,374.01 C749.21,392.59 723.64,413.41 698.56,433.83 " fill="none" id="Seller-Order" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="754.5387" y="394.3827">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="683.7894" y="422.9454">0..*</text></g><!--MD5=[06a6064c5cdd443a62b5eb59fb550c27]
+link Order to OrderItem--><g id="link_Order_OrderItem"><path codeLine="154" d="M624.55,645.15 C639.26,673.38 654.84,703.28 668.39,729.29 " fill="none" id="Order-OrderItem" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="620.1029" y="665.1785">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="640.5538" y="718.4293">0..*</text></g><!--MD5=[663c18ce459b41abc4dbff87433befbf]
+link OrderItem to Product--><g id="link_OrderItem_Product"><path codeLine="155" d="M689.13,875.59 C683.07,901.5 676.07,931.38 669.39,959.91 " fill="none" id="OrderItem-Product" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="663.4241" y="895.3549">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="662.893" y="948.8367">1</text></g><!--MD5=[2dd35b9e342a33989aa9b5490e0b19cd]
+link Order to Payment--><g id="link_Order_Payment"><path codeLine="156" d="M510.67,645.15 C499.49,664.87 487.85,685.4 476.82,704.86 " fill="none" id="Order-Payment" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="498.2157" y="665.1785">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="472.7094" y="693.8948">1</text></g><!--MD5=[bf362eb3c592cc13b72ce7baba04adff]
+link Customer to Review--><g id="link_Customer_Review"><path codeLine="158" d="M279.33,325.29 C212.42,340.72 127.78,371.82 80.02,434 C6,530.36 52.03,583.76 44.02,705 C38.3,791.48 23.91,815.7 44.02,900 C74.91,1029.5 151.76,1164.19 204.93,1246.83 " fill="none" id="Customer-Review" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="263.4678" y="322.9895">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="175.9993" y="1236.0022">0..*</text></g><!--MD5=[418687281c593c8dd812c04f2d15bfcd]
+link Product to Review--><g id="link_Product_Review"><path codeLine="159" d="M555.15,1132.43 C492.98,1173.41 409.96,1228.15 347.81,1269.12 " fill="none" id="Product-Review" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="539.542" y="1133.7504">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="355.4119" y="1261.1068">0..*</text></g><!--MD5=[59bebb6129b6ae204cbebc5ff88abd00]
+link Seller to VendorDashboard--><g id="link_Seller_VendorDashboard"><path codeLine="161" d="M889.29,374.01 C907.06,402.74 928.14,436.82 946.49,466.49 " fill="none" id="Seller-VendorDashboard" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="885.3681" y="394.3827">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="933.4853" y="455.2724">1</text></g><!--MD5=[47a0d6447096ac258e370d9062b30638]
+link Admin to AdminPanel--><g id="link_Admin_AdminPanel"><path codeLine="162" d="M1176.23,358.02 C1180.21,394.3 1185.7,444.39 1189.89,482.6 " fill="none" id="Admin-AdminPanel" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1168.4002" y="377.9817">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1180.6554" y="471.8148">1</text></g><!--MD5=[b1ea336c569c560d1678459b99d085fc]
+@startuml
+' Entities
+class User {
+  -user_id: Integer
+  -username: String
+  -email: String
+  -password: String
+  -role: Enum(Customer, Seller, Admin)
+  -created_at: DateTime
+  +authenticate()
+  +update_profile()
+}
+
+class Customer {
+  -shipping_address: String
+  -phone_number: String
+  +view_order_history()
+  +add_to_cart()
+}
+
+class Seller {
+  -store_name: String
+  -store_description: String
+  -earnings: Decimal
+  +manage_products()
+  +view_sales_analytics()
+}
+
+class Admin {
+  -admin_level: Enum(Moderator, SuperAdmin)
+  +moderate_users()
+  +generate_reports()
+}
+
+class Product {
+  -product_id: Integer
+  -name: String
+  -description: String
+  -price: Decimal
+  -stock: Integer
+  -category_id: Integer
+  -brand_id: Integer
+  -seller_id: Integer
+  -created_at: DateTime
+  +update_stock()
+  +delete_product()
+}
+
+class Category {
+  -category_id: Integer
+  -name: String
+  -description: String
+  +add_category()
+}
+
+class Brand {
+  -brand_id: Integer
+  -name: String
+  -logo_url: String
+  +update_brand()
+}
+
+class Cart {
+  -cart_id: Integer
+  -customer_id: Integer
+  -created_at: DateTime
+  +add_product()
+  +remove_product()
+  +calculate_total()
+}
+
+class CartItem {
+  -cart_item_id: Integer
+  -cart_id: Integer
+  -product_id: Integer
+  -quantity: Integer
+  +update_quantity()
+}
+
+class Order {
+  -order_id: Integer
+  -customer_id: Integer
+  -seller_id: Integer
+  -total_amount: Decimal
+  -status: Enum(Processing, Shipped, Delivered)
+  -payment_status: Enum(Pending, Completed, Failed)
+  -created_at: DateTime
+  -updated_at: DateTime
+  +track_order()
+  +update_status()
+}
+
+class OrderItem {
+  -order_item_id: Integer
+  -order_id: Integer
+  -product_id: Integer
+  -quantity: Integer
+  -price_at_time: Decimal
+  +get_subtotal()
+}
+
+class Payment {
+  -payment_id: Integer
+  -order_id: Integer
+  -amount: Decimal
+  -method: Enum(Stripe, PayPal)
+  -transaction_id: String
+  -status: Enum(Pending, Completed, Failed)
+  -created_at: DateTime
+  +process_payment()
+  +refund()
+}
+
+class Review {
+  -review_id: Integer
+  -product_id: Integer
+  -customer_id: Integer
+  -rating: Integer
+  -comment: String
+  -created_at: DateTime
+  +edit_review()
+}
+
+class VendorDashboard {
+  -seller_id: Integer
+  -total_sales: Decimal
+  -orders_count: Integer
+  -earnings: Decimal
+  +generate_analytics()
+  +export_report()
+}
+
+class AdminPanel {
+  -admin_id: Integer
+  -report_data: JSON
+  +moderate_content()
+  +view_analytics()
+}
+
+' Relationships
+User <|- - Customer
+User <|- - Seller
+User <|- - Admin
+
+Seller "1" - - "0..*" Product
+Product "0..*" - - "1" Category
+Product "0..*" - - "1" Brand
+
+Customer "1" - - "1" Cart
+Cart "1" - - "0..*" CartItem
+CartItem "0..*" - - "1" Product
+
+Customer "1" - - "0..*" Order
+Seller "1" - - "0..*" Order
+Order "1" - - "0..*" OrderItem
+OrderItem "0..*" - - "1" Product
+Order "1" - - "1" Payment
+
+Customer "1" - - "0..*" Review
+Product "1" - - "0..*" Review
+
+Seller "1" - - "1" VendorDashboard
+Admin "1" - - "1" AdminPanel
+@enduml
+
+@startuml
+class User {
+  -user_id: Integer
+  -username: String
+  -email: String
+  -password: String
+  -role: Enum(Customer, Seller, Admin)
+  -created_at: DateTime
+  +authenticate()
+  +update_profile()
+}
+
+class Customer {
+  -shipping_address: String
+  -phone_number: String
+  +view_order_history()
+  +add_to_cart()
+}
+
+class Seller {
+  -store_name: String
+  -store_description: String
+  -earnings: Decimal
+  +manage_products()
+  +view_sales_analytics()
+}
+
+class Admin {
+  -admin_level: Enum(Moderator, SuperAdmin)
+  +moderate_users()
+  +generate_reports()
+}
+
+class Product {
+  -product_id: Integer
+  -name: String
+  -description: String
+  -price: Decimal
+  -stock: Integer
+  -category_id: Integer
+  -brand_id: Integer
+  -seller_id: Integer
+  -created_at: DateTime
+  +update_stock()
+  +delete_product()
+}
+
+class Category {
+  -category_id: Integer
+  -name: String
+  -description: String
+  +add_category()
+}
+
+class Brand {
+  -brand_id: Integer
+  -name: String
+  -logo_url: String
+  +update_brand()
+}
+
+class Cart {
+  -cart_id: Integer
+  -customer_id: Integer
+  -created_at: DateTime
+  +add_product()
+  +remove_product()
+  +calculate_total()
+}
+
+class CartItem {
+  -cart_item_id: Integer
+  -cart_id: Integer
+  -product_id: Integer
+  -quantity: Integer
+  +update_quantity()
+}
+
+class Order {
+  -order_id: Integer
+  -customer_id: Integer
+  -seller_id: Integer
+  -total_amount: Decimal
+  -status: Enum(Processing, Shipped, Delivered)
+  -payment_status: Enum(Pending, Completed, Failed)
+  -created_at: DateTime
+  -updated_at: DateTime
+  +track_order()
+  +update_status()
+}
+
+class OrderItem {
+  -order_item_id: Integer
+  -order_id: Integer
+  -product_id: Integer
+  -quantity: Integer
+  -price_at_time: Decimal
+  +get_subtotal()
+}
+
+class Payment {
+  -payment_id: Integer
+  -order_id: Integer
+  -amount: Decimal
+  -method: Enum(Stripe, PayPal)
+  -transaction_id: String
+  -status: Enum(Pending, Completed, Failed)
+  -created_at: DateTime
+  +process_payment()
+  +refund()
+}
+
+class Review {
+  -review_id: Integer
+  -product_id: Integer
+  -customer_id: Integer
+  -rating: Integer
+  -comment: String
+  -created_at: DateTime
+  +edit_review()
+}
+
+class VendorDashboard {
+  -seller_id: Integer
+  -total_sales: Decimal
+  -orders_count: Integer
+  -earnings: Decimal
+  +generate_analytics()
+  +export_report()
+}
+
+class AdminPanel {
+  -admin_id: Integer
+  -report_data: JSON
+  +moderate_content()
+  +view_analytics()
+}
+
+User <|- - Customer
+User <|- - Seller
+User <|- - Admin
+
+Seller "1" - - "0..*" Product
+Product "0..*" - - "1" Category
+Product "0..*" - - "1" Brand
+
+Customer "1" - - "1" Cart
+Cart "1" - - "0..*" CartItem
+CartItem "0..*" - - "1" Product
+
+Customer "1" - - "0..*" Order
+Seller "1" - - "0..*" Order
+Order "1" - - "0..*" OrderItem
+OrderItem "0..*" - - "1" Product
+Order "1" - - "1" Payment
+
+Customer "1" - - "0..*" Review
+Product "1" - - "0..*" Review
+
+Seller "1" - - "1" VendorDashboard
+Admin "1" - - "1" AdminPanel
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
