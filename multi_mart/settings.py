@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',  # Token Authentication
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -47,9 +50,18 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'multi_mart.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+}
 
 TEMPLATES = [
     {
@@ -75,8 +87,12 @@ WSGI_APPLICATION = 'multi_mart.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',  # Use PostgreSQL engine
+        'NAME': 'multimartdb',              # Name of your PostgreSQL database
+        'USER': 'multimartadmin',                        # Your PostgreSQL username
+        'PASSWORD': 'admin',                  # The password you set earlier
+        'HOST': 'localhost',                       # Set to 'localhost' if local, or your server’s IP
+        'PORT': '5432',                            # Default PostgreSQL port
     }
 }
 
